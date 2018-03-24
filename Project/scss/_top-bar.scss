@@ -1,0 +1,53 @@
+.top-bar{
+    display:none;
+}
+@media all and (min-width: 540px) {
+    .top-bar{
+        display: block;
+        background-color: $darkest-color;
+        color: $l-text;
+        margin-top: 10px;
+        font-size: 12px;
+        padding: 0.5rem 0rem 0.5rem;
+        span{
+            padding-right: 20px;
+        }
+        &-form{
+            display: none;
+        }
+        &-form-fa{
+            display: none;
+        }
+    }
+}
+@media all and (min-width: 770px) {
+    .top-bar{
+        .form{
+            position: relative;
+        }
+        &-form{
+            display:block;
+            border: 1px solid $dark-color;
+            border-radius: 15px;
+            background-color: $dark-color;
+            padding-left: 0.5rem;
+            padding-right: 1rem;
+        }
+        &-form:hover{
+            border: 1px solid $blue-color;
+            border-radius: 15px;
+        }
+        &-form:focus{
+            outline: 0;
+            box-shadow: 0 0 0 0.1rem $blue-color;
+        }
+        &-form-fa{
+            display: block;
+            position:absolute;
+            top: 4px;
+            right: 7px;
+        }
+    }
+}
+
+

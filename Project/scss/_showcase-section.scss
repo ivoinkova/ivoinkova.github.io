@@ -1,0 +1,15 @@
+.bg-stars{
+    background: url(../img/stars.png) no-repeat;
+    background-position: right bottom;
+}
+
+.showcase{ 
+    color: $l-text;
+    border-bottom: 2px solid $l-text;
+    &-title{
+        color:$w-text;
+        padding-top: 44px;
+        font-size: 18px;
+    }
+}
+

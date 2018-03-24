@@ -1,0 +1,22 @@
+// basic button
+.btn{
+    border-radius: $border-radius;
+    text-transform: uppercase;
+}
+.btn-confirm{
+    color: $white;
+    background-color: $red;
+}
+.btn-inverse{
+    &-grey{
+        color:$grey;
+        width: 8rem;
+        margin: 0rem 0.5rem 0.2rem ;
+        border: 1px solid $grey;
+    }
+    &-white{
+        color:$white;
+        border: 2px solid $white;
+    }
+    
+}

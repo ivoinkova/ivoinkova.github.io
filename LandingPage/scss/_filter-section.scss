@@ -1,0 +1,25 @@
+.filter{
+    text-align: center;
+    &-items .link{
+        padding-right: 1rem;
+    }
+    &-items{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+}
+@media all and (min-width: 768px){
+    .filter{
+        &-items{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        &-align{
+            display: flex;
+            align-self: center;
+        }
+    }
+}

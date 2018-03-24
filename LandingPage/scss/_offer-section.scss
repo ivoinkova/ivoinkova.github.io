@@ -1,0 +1,14 @@
+.offer-filter{
+    height: 3.5rem;
+}
+.line{
+    top: 50%;
+    width:100%;
+    border-bottom: 2px solid $lgrey;
+    z-index: 1;
+}
+@media all and (min-width: 600px) {
+    .offer-filter{
+        height: 6rem;
+    }
+}

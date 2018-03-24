@@ -1,0 +1,49 @@
+.font-size{
+    &--30{
+        font-size: 30px;
+        font-weight: 700;
+    }
+    &--22{
+        font-size: 24px;
+        font-weight: 700;
+    }
+    &--18{
+        font-size: 18px;
+    }
+    &--16{
+        font-size: 16px;
+    }
+    &--12{
+        font-size: 12px;
+    }
+}
+.text{
+    &-green{
+        color: $green;
+    }
+    &-lgrey{
+        color:$grey;
+    }
+    &-dgrey{
+        color:$ddgrey;
+    }
+}
+.link{
+    color:$grey;
+}
+.link:hover{
+    color:$red;
+    text-decoration: none;
+}
+.link-dark{
+    color:$ddgrey;
+    display: inline;
+}
+
+.link--decoration{
+    text-decoration: underline;
+}
+.link--decoration:hover{
+    text-decoration: underline;
+    color:$red;
+}

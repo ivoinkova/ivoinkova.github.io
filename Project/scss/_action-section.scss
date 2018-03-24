@@ -1,0 +1,26 @@
+.action-section{ 
+    color: $w-text;
+    font-size: 14px;
+    &-title{
+        font-size: 28px;
+    }
+
+    &-outline{
+        outline: 2px solid $l-text;
+        outline-offset: -10px;
+        padding: 15px
+    }
+    .list{
+        margin: 1rem 1rem 1rem 2rem ;
+        li{
+            padding-bottom: 30px;
+        }
+        li:last-child{
+            padding-bottom: 10px;
+        }
+        &-circle{
+            list-style-type: circle;
+        }
+    }
+   
+}

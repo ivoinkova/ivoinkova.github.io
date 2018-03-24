@@ -1,0 +1,43 @@
+.footer{
+    color: $l-text;
+    &-contact{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    p{
+        font-size: 16px;
+        font-weight: bold;
+    }
+    img{
+        padding: 0 0.5rem 0.5rem 0;
+    }
+    &-blog-news-data{
+        color:$w-text;
+    }
+}
+.footer-fa-contact{
+    .fa{
+        color:$w-text;
+        padding: 0 1rem 1rem 0.5rem;
+    }
+}
+.footer-fa-social {
+    .fa:before{
+        color:$dark-color;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 2rem;
+        height: 2rem;
+        border: 1px solid $l-text;
+        background: $l-text;
+        border-radius: 50px;
+        margin: 3px;
+        text-align: center;
+    }
+}
+.copyrights{
+    font-size: 12px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}

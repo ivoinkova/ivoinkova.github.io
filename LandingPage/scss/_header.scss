@@ -1,0 +1,52 @@
+.navbar-custom{
+    padding: 0px;
+    font-size: 16px;
+    .navbar-nav .nav-link{
+        color: $grey;
+        padding: 0.5rem 1rem;
+    }
+    &-logo{
+        margin-left: 1rem;
+    }
+    &-brand-text{
+        color:$ddgrey;
+        font-size: 30px;
+        font-weight: 700;
+    }
+    &-toggler{
+        margin-right: 1rem;
+    }
+}
+.nav-icon{
+    text-align: center;
+        &-search{
+            background-color: $lgrey;
+        }
+        &-user{
+            background-color: $red;
+        }
+}
+@media (min-width: 992px){
+    .navbar-custom{
+        .navbar-nav .nav-link{
+            padding: 1.5rem 0.75rem;
+        }
+    }
+    .nav-icon{
+        display: flex;
+        align-items:stretch;
+        width: 13rem;
+        &-search{
+            width:30%;
+        }
+        &-user{
+            width:70%;
+        }
+    }
+    .header-form{
+        &-control{
+            display: none;
+        }
+    }
+}
+

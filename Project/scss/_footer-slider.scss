@@ -1,0 +1,20 @@
+.twitter-carousel{
+    padding-top: 2rem; 
+    height: 300px;
+    &-img{
+        margin-right: 1rem;
+    }
+    &-btn{
+        color:$w-text;
+        background-color: #00acee;
+    }
+    &-link{
+        color:$blue-color;
+        font-size: 12px;
+    }
+}
+@media all and (min-width: 720px) {
+    .twitter-carousel {
+        height: 200px;
+    }
+}

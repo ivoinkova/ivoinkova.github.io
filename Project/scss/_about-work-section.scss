@@ -1,0 +1,15 @@
+.about-work{
+    color:$l-text;
+    &-title{
+        color:$w-text;
+        font-size: 30px;
+        margin-bottom: 0px;
+    }
+    &-subtitle{
+        color:$w-text;
+        font-size: 22px;
+    }
+    img{
+        width: 100%;
+    }
+}

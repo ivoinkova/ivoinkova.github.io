@@ -1,0 +1,51 @@
+
+body{
+    font-family: 'OpenSans-Regular';
+    background-color: $dark-color;
+    color: $w-text;
+    font-size: 14px;
+    margin: auto;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+img {
+    height: auto;
+}
+.dark-line{
+    border-bottom: 2px solid $darkest-color;
+}
+.color-line{
+        padding: 2px;
+        background:linear-gradient(90deg,
+        $blue-color 1%, $blue-color 10%,
+        $w-text 10%, $w-text 11%,
+        $pink-color 11%, $pink-color 23%,
+        $w-text 23%, $w-text 24%,
+        $btn-color  24%, $btn-color 46%,
+        $w-text 46%, $w-text 47%,
+        $blue-color 47%, $blue-color 59%,
+        $w-text 59%, $w-text 60%,
+        $pink-color 60%, $pink-color 72%,
+        $w-text 72%, $w-text 73%,
+        $btn-color 73%, $btn-color 95%,
+        $w-text 95%, $w-text 96%,
+        $blue-color 96%, $blue-color 100%
+         );
+}
+.padding-y{
+    padding-top: 60px;
+    padding-bottom: 55px;
+}
+@media all and (min-width: 540px) {
+    .padding-y {
+        padding-top: 120px;
+        padding-bottom: 110px;
+    }
+}
+

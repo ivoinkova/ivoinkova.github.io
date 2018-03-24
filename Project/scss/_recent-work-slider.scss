@@ -1,0 +1,38 @@
+.recent-work{
+    background-color: $blue-color;
+    font-size: 28px;
+    &-title{
+        color: $dark-color;
+    }
+    img{
+        width: 100%;
+    }
+    img:hover{
+        cursor: pointer;
+    }
+    &-img{
+        width: 60%;
+        margin-bottom: 0.5rem;
+        opacity: 0.6;
+        &-text {
+            color:  $w-text;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+    }
+    &-img:hover {
+    opacity: 1;
+    }
+}
+
+@media all and (min-width: 540px){
+    .recent-work{
+        &-img{
+            width:100%;
+        }
+    }
+}
+
+

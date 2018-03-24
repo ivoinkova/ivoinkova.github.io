@@ -1,0 +1,106 @@
+i{
+    color:$white;
+}
+.fa-lgrey{
+    color:$grey;
+}
+
+.fa--circle{
+    .fa{
+            border-radius: 50%;
+            display:inline-flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+    }
+    &-sm{
+        .fa{
+            width: 2.5rem;
+            height: 2.5rem;
+            margin: 3px;
+        }
+    }
+    &-md{
+        .fa{
+            width: 3.5rem;
+            height: 3.5rem;
+        }
+    }
+    &-lg{
+        .fa{
+            width: 3.5rem;
+            height: 3.5rem;
+            font-size: 2em;
+            z-index: 100;
+        }
+    }
+    &-disable{
+        background: $grey;
+    }
+    &-green{
+        background: $green;
+    }
+    &-orange{
+        background: $orange;
+    }
+    &-purple{
+        background: $purple;
+    }
+    &-inverse{
+        color: $grey;
+        background: $llgrey;
+        border: 2px solid $grey;
+    }
+    &-inverse:hover{
+        color: $green;
+        background: $white;
+        border: 2px solid $green;
+        animation-name: animated-icon;
+        animation-duration: 1.5s;
+        animation-iteration-count: 2;
+        animation-direction: alternate;
+    }
+    &-border-w{
+        border: 3px solid $white;
+        border-radius: 50%;
+    }
+}
+@keyframes animated-icon{
+    from{
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 2rem;
+        transform: rotate(0deg);}
+    to{
+        width: 4rem;
+        height: 4rem;
+        font-size: 2.5rem;
+        transform: rotate(360deg);
+    }
+}
+@media all and (min-width: 600px) {
+    .fa--circle{
+        &-lg{
+            .fa{
+                width: 6rem;
+                height: 6rem;
+                font-size: 4em;
+            }
+        }
+        &-inverse{
+            box-shadow: 0 0 5px 5px $llgrey;
+        }
+    }
+    @keyframes animated-icon {
+        from {width: 6rem;
+            height: 6rem;
+            font-size: 4em;
+            transform: rotate(0deg);}
+        to {
+            width: 6.5rem;
+            height: 6.5rem;
+            font-size: 4.5em;
+            transform: rotate(360deg);
+        }
+    }
+}

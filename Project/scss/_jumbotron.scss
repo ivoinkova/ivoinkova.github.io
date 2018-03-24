@@ -1,0 +1,77 @@
+
+.banner {
+    font-family: 'VarelaRound-Regular', sans-serif;
+    background-color: $dark-color;
+    background: linear-gradient(to right, $dark-color , $gardient);
+    height: 420px ;
+    &-carousel-caption {
+        position: absolute;
+        bottom: 15%;
+        padding: 1rem 1rem 0 0;
+    }
+    h1 {
+        color: $w-text;
+        font-size: 40px;
+    }
+
+    &-top-headline {
+        display: block;
+        color: $blue-color;
+        font-size: 25px;
+        font-family: 'VarelaRound-Regular', sans-serif;
+    }
+
+    &-action {
+        background-color: $btn-color;
+        color: $w-text;
+        font-size: 18px;
+        border-radius: 30px;
+        margin: 2.5rem 0.2rem 0.2rem 0.2rem;
+        padding: 0.5rem 3rem 0.5rem;
+    }
+    &-action:hover{
+        background-color: $btn-color-hover;
+    }
+    &-action:focus {
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem $blue-color;
+    }
+    a:hover {
+        color: $w-text;
+    }
+}
+.slider{
+    background-color: $blue-color;
+    padding: 1.5rem 1rem;
+    &-carousel-control{
+        position: static;
+    }
+    // &-carousel-control:focus{
+    //      background: #7dc8d1;
+    // }
+    &-text{
+        font-size: 18px;
+        padding: 0 1rem 0;
+    }
+}
+@media all and (min-width: 540px) {
+    .banner {
+        background: linear-gradient(to right, $dark-color , $gardient);
+        height: 560px;
+        h1 {
+            font-size: 64px;
+        }
+        &-top-headline {
+            font-size: 30px;
+        }
+        &-carousel-caption {
+            bottom: 25%;
+        }
+    }
+}
+@media all and (min-width: 960px){
+    .banner{
+        background: linear-gradient(to right, $dark-color, $w-text);
+    }
+    
+}
