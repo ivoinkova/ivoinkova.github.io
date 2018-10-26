@@ -1,0 +1,53 @@
+// typography
+.text{
+    &-brand-highlight{
+        color: $orange;
+    }
+    &-banner{
+        color: $light;
+        font-size: 22px;
+    }
+    &-banner-small{
+        color: $light;
+        font-size: 16px;
+    }
+    &-sale{
+        color: $light;
+        font-size: 19px;
+    }
+}
+.font{
+    &-narrow{
+        font-family: 'PT Sans Narrow', sans-serif;
+    }
+    &-myriad{
+        font-family: 'Myriad Pro', sans-serif;
+    }
+}
+.title{
+    text-transform: uppercase;
+    font-weight: 700;
+    &-main{
+        color: $gold;
+        font-size: 50px;
+    }
+    &-banner{
+        font-size: 38px;
+        &-inverse{
+            color: $light;
+        }
+    }
+    &-card-questions{
+        font-size: 24px;
+    }
+}
+@media (min-width: 768px) {
+    .title{
+        &-main{
+            font-size: 60px;
+        }
+        &-banner{
+            font-size: 48px;
+        }
+    }
+}

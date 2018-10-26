@@ -1,0 +1,360 @@
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("MyriadPro-Regular.eot");
+  src: url("MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("MyriadPro-Regular.woff2") format("woff2"), url("MyriadPro-Regular.woff") format("woff"), url("MyriadPro-Regular.svg#MyriadPro-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* line 3, scss/_typography.scss */
+.text-brand-highlight {
+  color: #fc481a; }
+/* line 6, scss/_typography.scss */
+.text-banner {
+  color: #fff;
+  font-size: 22px; }
+/* line 10, scss/_typography.scss */
+.text-banner-small {
+  color: #fff;
+  font-size: 16px; }
+/* line 14, scss/_typography.scss */
+.text-sale {
+  color: #fff;
+  font-size: 19px; }
+
+/* line 20, scss/_typography.scss */
+.font-narrow {
+  font-family: 'PT Sans Narrow', sans-serif; }
+/* line 23, scss/_typography.scss */
+.font-myriad {
+  font-family: 'Myriad Pro', sans-serif; }
+
+/* line 27, scss/_typography.scss */
+.title {
+  text-transform: uppercase;
+  font-weight: 700; }
+  /* line 30, scss/_typography.scss */
+  .title-main {
+    color: #bba45a;
+    font-size: 50px; }
+  /* line 34, scss/_typography.scss */
+  .title-banner {
+    font-size: 38px; }
+    /* line 36, scss/_typography.scss */
+    .title-banner-inverse {
+      color: #fff; }
+  /* line 40, scss/_typography.scss */
+  .title-card-questions {
+    font-size: 24px; }
+
+@media (min-width: 768px) {
+  /* line 46, scss/_typography.scss */
+  .title-main {
+    font-size: 60px; }
+  /* line 49, scss/_typography.scss */
+  .title-banner {
+    font-size: 48px; } }
+/* line 1, scss/_buttons.scss */
+.btn {
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  background-color: #fc481a;
+  margin: 10px 0;
+  padding: 15px 20px;
+  text-align: center; }
+  /* line 10, scss/_buttons.scss */
+  .btn-confirm {
+    font-size: 24px;
+    width: 250px;
+    position: relative; }
+  /* line 16, scss/_buttons.scss */
+  .btn-form {
+    font-size: 22px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    position: relative;
+    padding-left: 15%;
+    width: 100%; }
+  /* line 23, scss/_buttons.scss */
+  .btn-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 100%;
+    background-color: #b13412;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-item-align: center;
+        align-self: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+
+/* line 38, scss/_buttons.scss */
+.shadow-btn-decoration {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 55%;
+  border-radius: 0 0 50% 50%;
+  border: 1px solid #fc5b32;
+  background: #fc5b32; }
+/* line 48, scss/_buttons.scss */
+.shadow-text-zindex {
+  position: relative;
+  z-index: 100; }
+
+/* line 53, scss/_buttons.scss */
+.btn:hover {
+  background-color: #b13412; }
+  /* line 55, scss/_buttons.scss */
+  .btn:hover .shadow-btn-decoration {
+    background-color: transparent;
+    border: 1px solid  transparent;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out; }
+
+/* line 1, scss/_style-for-sections.scss */
+body {
+  background-color: #000;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1rem;
+  color: #000; }
+
+/* line 7, scss/_style-for-sections.scss */
+li {
+  list-style-type: none;
+  margin-top: 8px; }
+
+/* line 11, scss/_style-for-sections.scss */
+ul {
+  margin-left: 0;
+  padding-left: 0; }
+
+/* line 15, scss/_style-for-sections.scss */
+.header {
+  color: #fff; }
+  /* line 17, scss/_style-for-sections.scss */
+  .header-icon {
+    width: 45px; }
+  /* line 20, scss/_style-for-sections.scss */
+  .header-brand {
+    font-family: 'Myriad Pro';
+    font-size: 55px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    padding: 0 10px 0; }
+
+/* line 28, scss/_style-for-sections.scss */
+.img-small {
+  max-width: 50%; }
+
+@media (min-width: 768px) {
+  /* line 32, scss/_style-for-sections.scss */
+  .img-small {
+    max-width: 100%; } }
+/* line 38, scss/_style-for-sections.scss */
+.li-decoration {
+  border-radius: 50%;
+  border: 1px solid #fff;
+  background-color: #fc481a;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px 0 0 0;
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  margin-right: 8px; }
+
+/* line 52, scss/_style-for-sections.scss */
+.timer {
+  display: inline-block;
+  position: relative; }
+  /* line 55, scss/_style-for-sections.scss */
+  .timer-line {
+    position: absolute;
+    top: 50%;
+    z-index: 3;
+    width: 100%;
+    height: 2px;
+    background-color: #e6e6e6; }
+  /* line 63, scss/_style-for-sections.scss */
+  .timer-block {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 50px;
+    border-radius: 10px;
+    background-color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    /* line 72, scss/_style-for-sections.scss */
+    .timer-block-disabled {
+      width: 50px;
+      height: 100%;
+      border-radius: 10px;
+      background-color: #b5b5b59a;
+      position: absolute;
+      z-index: 2; }
+
+/* line 83, scss/_style-for-sections.scss */
+.order-form {
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 20px 0 0 0; }
+  /* line 87, scss/_style-for-sections.scss */
+  .order-form-icon {
+    width: 20px; }
+  /* line 91, scss/_style-for-sections.scss */
+  .order-form-price {
+    background-color: #441309;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(-10%, #fc481a), color-stop(-3%, #b13412), color-stop(36%, #441309), to(#441309));
+    background: linear-gradient(#fc481a -10%, #b13412 -3%, #441309 36%, #441309);
+    padding: 20px 15px;
+    border-radius: 9px 9px 40px 40px;
+    position: relative; }
+  /* line 98, scss/_style-for-sections.scss */
+  .order-form-light-decoration {
+    width: 50%;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, right top, from(red), to(yellow));
+    background: linear-gradient(90deg, red, yellow);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 0, 0, 0)), to(rgba(255, 255, 255, 0.3)));
+    background: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 255, 255, 0.3));
+    border-radius: 9px 40px 40px 40px;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  /* line 115, scss/_style-for-sections.scss */
+  .order-form-text-price {
+    display: block;
+    font-size: 35px; }
+    /* line 119, scss/_style-for-sections.scss */
+    .order-form-text-price-disabled {
+      opacity: 0.6; }
+    /* line 122, scss/_style-for-sections.scss */
+    .order-form-text-price-line {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      height: 2px;
+      background-color: #fff;
+      opacity: 0.6; }
+
+/* line 133, scss/_style-for-sections.scss */
+.circle-decoration {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background-color: #808080;
+  border-radius: 50%;
+  vertical-align: middle;
+  padding-top: 5px;
+  font-size: 30px;
+  font-weight: 700; }
+
+/* line 145, scss/_style-for-sections.scss */
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  border: 0px; }
+  /* line 149, scss/_style-for-sections.scss */
+  .card-img-top {
+    border-radius: 10px; }
+  /* line 152, scss/_style-for-sections.scss */
+  .card-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  /* line 156, scss/_style-for-sections.scss */
+  .card-title {
+    text-align: center; }
+  /* line 159, scss/_style-for-sections.scss */
+  .card-small {
+    margin: 10px;
+    cursor: pointer;
+    width: 45%; }
+  /* line 164, scss/_style-for-sections.scss */
+  .card-small:hover {
+    -webkit-box-shadow: 0px 0px 2px 2px #fc481a;
+            box-shadow: 0px 0px 2px 2px #fc481a;
+    -webkit-transition: -webkit-box-shadow 0.5s ease-out;
+    transition: -webkit-box-shadow 0.5s ease-out;
+    transition: box-shadow 0.5s ease-out;
+    transition: box-shadow 0.5s ease-out, -webkit-box-shadow 0.5s ease-out; }
+
+@media (min-width: 768px) {
+  /* line 171, scss/_style-for-sections.scss */
+  .card-questions {
+    width: 50%;
+    margin: 0 auto; }
+  /* line 175, scss/_style-for-sections.scss */
+  .card-small {
+    width: 30%; } }
+/* line 1, scss/_backgrounds.scss */
+.bg-main-banner {
+  background: url("img/bg-main-banner.png") center no-repeat;
+  background-color: #000; }
+
+@media (min-width: 768px) {
+  /* line 7, scss/_backgrounds.scss */
+  .bg-main-banner {
+    background: url("img/panpomax-bottle-and-box.png") left bottom no-repeat, url("img/bg-main-banner.png") center no-repeat;
+    background-color: #000; }
+
+  /* line 12, scss/_backgrounds.scss */
+  .bg-fire {
+    background: url("img/bg-fire.png") center no-repeat;
+    background-color: #000; }
+
+  /* line 16, scss/_backgrounds.scss */
+  .bg-floor {
+    background: url("img/bg-floor.png") left bottom no-repeat, url("img/bg-light.png") 50% 8% no-repeat;
+    background-color: #000; }
+
+  /* line 22, scss/_backgrounds.scss */
+  .bg-window {
+    background: url("img/bg-window.png") right no-repeat;
+    background-color: #fff;
+    background-size: cover; }
+
+  /* line 27, scss/_backgrounds.scss */
+  .bg-fire-girl {
+    background: url("img/little-fire.jpg") 60% 100%;
+    background-color: #fff;
+    background-repeat: no-repeat; } }
+@media (min-width: 992px) {
+  /* line 35, scss/_backgrounds.scss */
+  .bg-main-banner {
+    background: url("img/panpomax-bottle-and-box.png") left bottom no-repeat, url("img/man-and-woman.png") right top no-repeat, url("img/bg-main-banner.png") center no-repeat;
+    background-color: #000; }
+
+  /* line 41, scss/_backgrounds.scss */
+  .bg-fire-girl {
+    background: url("img/fire-girl.jpg") right bottom, url("img/little-fire.jpg") 55% 100%;
+    background-color: #fff;
+    background-repeat: no-repeat; } }
+@media (min-width: 1200px) {
+  /* line 49, scss/_backgrounds.scss */
+  .bg-main-banner {
+    background: url("img/panpomax-bottle-and-box.png") left bottom no-repeat, url("img/man-and-woman.png") 50% 100% no-repeat, url("img/bg-main-banner.png") center no-repeat;
+    background-color: #000;
+    height: 660px; } }
+
+/*# sourceMappingURL=style.css.map */

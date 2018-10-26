@@ -1,0 +1,56 @@
+.bg-main-banner{
+    background: url('img/bg-main-banner.png') center no-repeat;
+    background-color: $dark;
+}
+@media (min-width: 768px) {
+    // background dark banners
+    .bg-main-banner{
+        background: url('img/panpomax-bottle-and-box.png') left bottom no-repeat,
+                    url('img/bg-main-banner.png') center no-repeat;
+        background-color: $dark;
+    }
+    .bg-fire{
+        background: url('img/bg-fire.png') center no-repeat;
+        background-color: $dark;
+    }
+    .bg-floor{
+        background: url('img/bg-floor.png') left bottom no-repeat,
+                    url('img/bg-light.png') 50% 8% no-repeat;
+        background-color: $dark;
+    }
+    // background for large white cards
+    .bg-window{
+        background: url('img/bg-window.png') right no-repeat;
+        background-color: $light;
+        background-size: cover;
+    }
+    .bg-fire-girl{
+        background: url('img/little-fire.jpg') 60% 100%;
+        background-color: $light;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (min-width: 992px) {
+    .bg-main-banner{
+        background: url('img/panpomax-bottle-and-box.png') left bottom no-repeat,
+                    url('img/man-and-woman.png') right top no-repeat,
+                    url('img/bg-main-banner.png') center no-repeat;
+        background-color: $dark;
+    }
+    .bg-fire-girl{
+        background: url('img/fire-girl.jpg') right bottom,
+                    url('img/little-fire.jpg') 55% 100%;
+        background-color: $light;
+        background-repeat: no-repeat;
+    }
+}
+@media (min-width: 1200px) {
+    .bg-main-banner{
+        background: url('img/panpomax-bottle-and-box.png') left bottom no-repeat,
+                    url('img/man-and-woman.png') 50% 100% no-repeat,
+                    url('img/bg-main-banner.png') center no-repeat;
+        background-color: $dark;
+        height: 660px;
+    }
+}
