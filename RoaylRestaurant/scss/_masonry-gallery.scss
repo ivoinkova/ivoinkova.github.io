@@ -1,0 +1,13 @@
+
+.grid-container{
+    column-count: 1;
+}
+.item {
+    margin-bottom: 1rem;
+}
+@media (min-width: 576px){
+    .grid-container{
+        column-gap: 1.25rem;
+        column-count: 3;
+    }
+}

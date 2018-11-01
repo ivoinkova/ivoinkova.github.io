@@ -1,0 +1,20 @@
+
+// contact form
+::placeholder {
+    color: $title-light;
+    text-transform: uppercase;
+}
+.form-control-custom{
+    padding: 20px 10px 20px 40px;
+    color: $title-light;
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    background-color: $bgwhite;
+    border: none;
+    transition: box-shadow .15s ease-in-out;
+}
+.form-control-custom:focus {
+    outline: 0; 
+    box-shadow: 0 0 0 0.2rem $btn;
+}

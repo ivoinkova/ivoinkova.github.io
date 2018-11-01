@@ -1,0 +1,150 @@
+
+
+.bg-grey{
+    background: $bglight;
+}
+// background-image
+.bg-img{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-color: $title-dark;
+}
+.bg-img:before {
+    content: "";
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+@media (min-width: 768px) {
+    .bg-img{
+        height: 700px;
+    }
+}
+// dark-effect for bg & img
+.dark-effect{
+    background-color: rgba(35,35,35, 0.6);
+    z-index: 0;
+}
+.dark-effect-overlay{
+    mix-blend-mode: overlay;
+}
+// for logo
+.white-effect{
+    background-color: rgba(255, 255, 255, 0.829);
+}
+.white-effect-overlay{
+    mix-blend-mode: overlay;
+}
+// none dark-effect for img
+
+// 
+.card-round-shadow{
+    background: radial-gradient(at top,  $bglight, $bglight, $bgwhite,  $bgwhite);
+}
+// cards and img hover
+.shadow:hover{
+    box-shadow: 0px 0px 2px 2px $btn;
+    transition: box-shadow .3s ease-in-out;
+}
+.dark-effect-hover:hover{
+    transition: background-color .3s ease-in-out;
+    background-color:rgba(35, 35, 35, 0.2);
+}
+// padding between sections
+.padding{
+    padding: 50px 0 50px;
+}
+// line decoration
+.line{
+    width: 100px;
+    height: 1px;
+    margin-top: 0px;
+    margin-bottom: 45px;
+    &-light{
+        background: $bgwhite;
+    }
+    &-dark{
+        background: $line;
+    }
+}
+@media (min-width: 576px) {
+    .line{
+        margin-top: 45px;
+    }
+    .padding{
+        padding: 100px 0 100px;
+    }
+}
+.marker{
+    color: $marker;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    &-left{
+        left: 0;
+    }
+    &-right{
+        left: 0;
+    }
+}
+.container-marker{
+    position: relative;
+    margin-top: 30px;
+    &-left{
+        padding-left: 50px;
+    }
+    &-right{
+        padding-left: 50px;
+        text-align: left;
+    }
+}
+@media (min-width: 768px){
+    .container-marker{
+        position: relative;
+        margin-top: 50px;
+        &-left{
+            padding-left: 70px;
+        }
+        &-right{
+            padding-right: 70px;
+            padding-left: 0px;
+            text-align: right;
+        }
+    }
+    .marker{
+        font-size: 40px;
+        line-height: 30px;
+        &-right{
+            right: 0;
+        }
+    }
+}
+.col-equal{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 1rem 0 0 0;
+}
+
+.icon{
+    &-light{
+        color: $bglight;
+    }
+    // footer icons
+    &-circle{
+        padding: 12px 5px 5px 5px;
+        width: 2.5rem;
+        height: 2.5rem;
+        background-color: $line;
+        color: $bgwhite;
+        border-radius: 50%;
+        text-align: center;
+        margin: 5px;
+    }
+}
+

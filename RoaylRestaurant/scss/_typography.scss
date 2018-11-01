@@ -1,0 +1,63 @@
+body{
+    font-family: 'PT Serif', serif;
+}
+// title for section
+.title{
+    font-weight: 700;
+    font-size: 35px;
+    &-sub{
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: 2px;
+        color: $title-light;
+    }
+    &-font{
+        font-family: 'Yellowtail', cursive;;
+        font-size: 45px;
+        line-height: 35px;
+        color: $bgwhite;
+        position: absolute;
+        margin: 0;
+        transform: translate(-50%, -50%);
+        top: 50%; 
+        left: 50%
+    }
+}
+.text{
+    &-black{
+        color: $title-dark;
+    }
+    &-lightsome{
+        color: $title-light;
+    }
+    &-grey{
+        font-size: 14px;
+        color: $text;
+    }
+}
+.font-size{
+    &-16{
+        font-size: 16px;
+    }
+    &-18{
+        font-size: 18px;
+    }
+    &-20{
+        font-size: 20px;
+    }
+    &-22{
+        font-size: 22px;
+    }
+    &-28{
+        font-size: 28px;
+    }
+}
+@media (min-width: 768px) {
+    .title{
+        &-section{
+            width: 40%;
+            margin: 0 auto;
+        }
+    }
+}

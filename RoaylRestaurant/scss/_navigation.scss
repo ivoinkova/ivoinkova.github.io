@@ -1,0 +1,47 @@
+.nav{
+    &-custom{
+    background: $bglight;
+    padding: 1rem;
+    }
+    &-custom-link:hover{
+    background: #8083695d;
+    }
+}
+.navbar{
+    &-icon{
+        color: $title-dark;
+    }
+}
+.navbar-expand-lg .navbar-nav .nav-custom{
+    &-link{
+        padding: 0.5rem 1.5rem 0.5rem;
+    }
+    &-link:first-child{
+        display: none;
+    }
+}
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-custom{
+        &-link{
+            padding: 0 1.5rem 0;
+            border-right: 1px solid $line;
+        }
+        &-link:first-child{
+            display: block;
+        }
+        &-link:last-child{
+            border-right-style: none;
+        }
+    }
+    .navbar{
+        &-icon-min{
+            display: none;
+        }
+    }
+}
+
+
+
+
+
+
