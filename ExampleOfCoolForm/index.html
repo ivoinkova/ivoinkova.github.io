@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Форма для авторизации</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="form">
+            <label class="tab active" title="Вкладка 1"><i class="fas fa-sign-in-alt"></i>Авторизация</label>
+            <label class="tab" title="Вкладка 2"><i class="fas fa-user-plus"></i>Регистрация</label>
+            <form class="tab-form active">
+                <div class="box-input">
+                    <input class="input" type="text" required>
+                    <label for="">Введите E-mail</label></div>
+                <div class="box-input">
+                    <input class="input" type="password" required>
+                    <label for="">Введите пароль</label>
+                </div>
+                <a href="#" class="button">Войти</a>
+                <ul class="social">
+                    <li><a href="#"><div><i class="fab fa-facebook"></i></div></a></li>
+                    <li><a href="#"><div><i class="fab fa-instagram"></i></div></a></li>
+                    <li><a href="#"><div><i class="fab fa-twitter"></i></div></a></li>
+                    <li><a href="#"><div><i class="fab fa-youtube"></i></div></a></li>
+                </ul>
+                <a href="#">Я забыл свой E-mail или пароль</a>
+            </form>
+            <form class="tab-form">
+                <div class="box-input">
+                    <input class="input" type="text" required>
+                    <label for="">Введите E-mail адрес</label>
+                </div>
+                <div class="box-input">
+                    <input class="input" type="password" required>
+                    <label for="">Введите пароль</label>
+                </div>
+                <a href="#" class="button">Регистрация</a>
+                <div class="recover">
+                    <input type="checkbox" id="chbox">
+                    <label for="chbox"> Ознакомлен(-а) и принимаю
+                        <a href="#">условия регистрации</a>
+                    </label>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
